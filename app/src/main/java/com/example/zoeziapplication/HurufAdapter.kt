@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.recyclerview.widget.RecyclerView
 
-class HurufAdapter(private val listHuruf : ArrayList<String>, var context: Context, val onClick : (Int) -> Unit):RecyclerView.Adapter<HurufAdapter.ViewHolder>() {
+class HurufAdapter(private val listHuruf: ArrayList<String>, var context: Context, val onClick: (Int) -> Unit):RecyclerView.Adapter<HurufAdapter.ViewHolder>() {
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
         val btn = itemView.findViewById<Button>(R.id.button)

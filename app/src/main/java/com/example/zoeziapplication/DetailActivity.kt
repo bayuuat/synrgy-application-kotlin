@@ -27,10 +27,14 @@ class DetailActivity : AppCompatActivity() {
 
     fun getDetail(): List<String> {
         val listKata : ArrayList<String> = arrayListOf(
-            "Audition", "American", "Academy", "Brown", "Indicator", "Data", "Outcome", "Catapult", "Clown"
+            "Audition", "American", "Academy", "Brown", "Indicator", "Data", "Outcome", "Catapult", "Clown",
+            "Buy", "Box", "Dog", "Dawn", "Extras", "Ell", "Egg", "Fish", "Frog", "Family", "Ground", "Goal",
+            "Ghost", "House", "Hommie", "Haunt", "Illness", "Jaguar", "Key", "Longshot", "Mature", "Nice",
+            "Offside", "Petronom", "Quill", "Rex",  "Study", "Try", "Unzip", "Vendeta", "World", "X-Ray",
+            "Yawn", "Zebra"
         )
         val huruf = intent.getStringExtra("HURUF").toString()
-        val data = listKata.filter { kata -> kata.contains(huruf) }
+        val data = listKata.filter { kata -> kata.startsWith(huruf) }
 
         for (item in data){
             Log.e("HRR", item)
